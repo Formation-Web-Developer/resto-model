@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+@font-face
+{
+    font-family: "PlayfairDisplay";
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "PlayfairDisplay";
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    width: 100vw;
+
+    position: fixed;
+    z-index: 1;
+
+    top:0;
+    box-shadow: 0 .2rem .4rem 0 rgba(117, 117, 117, .5);
+}
+
+@media screen and (min-width: 576px)
+{
+    nav
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo
+{
+    padding: .7rem;
+}
+
+.logo, li
+{
+    transition: .2s;
+}
+
+.logo:hover, li:hover{
+    background-color: rgb(94, 87, 87);
+    color: white;
+}
+
+li:hover a{
+    color: white;
+}
+
+li
+{
+    display: inline;
+    padding: .7rem;
+}
+
+#imgHeader
+{
+    margin-top: 2rem;
+    background-image: url('/img/hamburger.jpg');
+    width: 100%;
+    height: 45rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: .7rem;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h3
+{
+    font-weight: normal;
+    color: gray;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.col
+{
+    width: 100%;
+    padding: 2.5rem;
+}
+
+@media screen and (min-width: 768px)
+{
+    .col
+    {
+        width: 50%;
+    }
+}
+
+.col img{
+    width: 100%;
+}
+
+h2, h3{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+h2{
+    font-family: 'Source Code Pro';
+}
+
+h2, .menu-title{
+    letter-spacing: .2rem;
+}
+
+div p
+{
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+span{
+    background-color: rgba(146, 145, 145, 0.267);
+    padding: .2rem .3rem;
+}
+
+.bold
+{
+    font-weight: 600;
+}
+
+#menu-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title
+{
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.menu{
+    margin-top: 2.5rem;
+}
+
+.menu-description
+{
+    margin: 0;
+    padding-top: 1rem;
+    color: gray;
+    font-size: .8rem;
+}
+
+#contact
+{
+    padding: 3rem;
+    flex-direction: column;
+}
+#contact h2
+{
+    text-align: left;
+}
+
+#contact p{
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.address
+{
+    color: rgb(53, 128, 151);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea
+{
+    margin: .7rem 0;
+    padding: .7rem;
+    border: none;
+    border-bottom: 1px solid rgb(175, 170, 170);
+}
+
+input:focus, textarea:focus
+{
+    outline: none;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    margin: 1.5rem 0;
+    width: fit-content;
+    padding: .7rem;
+    border: none;
+    color: #969191;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: black;
+    color: white;
+}
+
+hr{
+    border: 1px solid rgba(158, 156, 156, 0.151);
+    width: 95%;
+    margin-top: 4rem;
+}
