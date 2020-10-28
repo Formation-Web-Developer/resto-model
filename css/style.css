@@ -3,7 +3,7 @@
 @font-face
 {
     font-family: "PlayfairDisplay";
-    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
 
 *
@@ -74,7 +74,7 @@ li
 #imgHeader
 {
     margin-top: 2rem;
-    background-image: url('/img/hamburger.jpg');
+    background-image: url('../img/hamburger.jpg');
     width: 100%;
     height: 45rem;
 
